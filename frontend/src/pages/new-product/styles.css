@@ -1,0 +1,86 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.form h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 80px 0 20px;
+}
+
+.form .form-inputs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form .form-inputs input {
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form .form-inputs input::placeholder {
+    color: #333;
+    opacity: 0.7;
+}
+
+.form .form-inputs textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.form .form-inputs textarea::placeholder {
+    color: #333;
+    opacity: 0.7;
+}
+
+.form .buttons-form {
+    display: flex;
+    justify-content: space-between;
+}
+.form .buttons-form a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #da552f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form .buttons-form a:hover {
+    opacity: 0.7;
+}
+
+.form .buttons-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #da552f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form .buttons-form button:hover {
+    opacity: 0.7;
+}

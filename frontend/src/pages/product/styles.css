@@ -1,0 +1,77 @@
+.product-info {
+    display: flex;
+    flex-direction: column;
+    max-width:700px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.product-info h1 {
+    font-size: 32px;
+}
+
+.product-info p {
+    color: #666;
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+.product-info p a {
+    color: #069;
+    text-decoration: none;
+}
+
+.product-info .button-delete {
+    text-align: end;
+    color: #666666;
+    border-style: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.product-info .button-delete:hover {
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+}
+
+.product-info .btn-edit {
+    text-align: end;
+    text-decoration: none;
+    color: #666666;
+    border-style: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.product-info .btn-edit:hover {
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+}
+
+.button-back {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: #da552f;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button-back a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-back:hover {
+    opacity: 0.7;
+}
