@@ -67,7 +67,7 @@ export default class Search extends Component {
 
         if (productSelected.length === 0) {
             return alert('Linguagem não encontrada.')
-        } else if (search === '' || search.length < 5) {
+        } else if (search === '' || search.length < 2) {
             return
         } else {
             this.setState({ result: productSelected })
