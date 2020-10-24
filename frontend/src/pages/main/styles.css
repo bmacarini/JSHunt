@@ -12,6 +12,7 @@
 
 .product-list .search-btnNew a {
     padding: 10px;
+    height: 37px;
     border-radius: 5px;
     border: 0;
     background: #da552f;
@@ -45,7 +46,7 @@
 .product-list article a {
     height: 40px;
     border-radius: 5px;
-    border: 2px solid #da552f;
+    border: 1px solid #da552f;
     background: none;
     margin-top: 10px;
     color: #da552f;
@@ -71,6 +72,7 @@
 
 .product-list .actions button {
     padding: 10px;
+    height: 37px;
     border-radius: 5px;
     border: 0;
     background: #da552f;
@@ -91,4 +93,15 @@
 
 .product-list .actions button[disabled]:hover {
     opacity: 0.5;
+}
+
+@media (max-device-width: 600px) {
+    .product-list .search-btnNew {
+        flex-direction: column;
+    }
+
+    .product-list .search-btnNew a {
+        margin-top: 20px;
+        text-align: center;
+    }
 }

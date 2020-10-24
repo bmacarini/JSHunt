@@ -35,7 +35,7 @@ export default class Product extends Component {
         const { product } = this.state;
 
         return (
-            <>
+            <div className="wrapper-product">
                 <div className="product-info" key={product._id}>
 
                     <button className="button-delete" onClick={() => this.handleDelete(product._id)}>
@@ -59,7 +59,7 @@ export default class Product extends Component {
                         Voltar
                     </Link>
                 </div>
-            </>
+            </div>
         );
     }
 }

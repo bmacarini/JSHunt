@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { FiSearch } from 'react-icons/fi';
 
-import { Wrapper, InputSearch, BtnSearch, SpanSearch } from './styles.js';
+import { Wrapper, WrapperSearch, InputSearch, BtnSearch, SpanSearch, LinkResult } from './styles.js';
 
 export default class Search extends Component {
 
@@ -84,13 +84,15 @@ export default class Search extends Component {
         return (
             <>
                 <Wrapper onSubmit={this.filterProducts}>
-                    <InputSearch type="search" value={search} placeholder="Pesquisar" onChange={this.handleInputSearch} />
-                    <BtnSearch type="submit">
-                        <FiSearch size="1.2em" color="#ddd" />
-                    </BtnSearch>
+                    <WrapperSearch>
+                        <InputSearch type="search" value={search} placeholder="Pesquisar" onChange={this.handleInputSearch} />
+                        <BtnSearch type="submit">
+                            <FiSearch size="1.2em" color="#fff" />
+                        </BtnSearch>
+                    </WrapperSearch>
                     {result.map(filteredProduct => (
                         <SpanSearch>
-                            <Link to={`/products/${filteredProduct._id}`} key={filteredProduct._id}>{filteredProduct.title}</Link>
+                            <LinkResult to={`/products/${filteredProduct._id}`} key={filteredProduct._id}>{filteredProduct.title}</LinkResult>
                         </SpanSearch>
                     ))}
                 </Wrapper>

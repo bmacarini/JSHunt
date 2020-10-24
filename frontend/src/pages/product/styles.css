@@ -1,4 +1,8 @@
-.product-info {
+.wrapper-product {
+    padding: 0 20px;
+}
+
+.wrapper-product .product-info {
     display: flex;
     flex-direction: column;
     max-width:700px;
@@ -9,22 +13,25 @@
     border: 1px solid #ddd;
 }
 
-.product-info h1 {
+.wrapper-product .product-info h1 {
     font-size: 32px;
+    width: 80%;
 }
 
-.product-info p {
+.wrapper-product .product-info p {
     color: #666;
     line-height: 24px;
     margin-top: 5px;
+    width: 80%;
 }
 
-.product-info p a {
+.wrapper-product .product-info p a {
     color: #069;
     text-decoration: none;
+    width: 80%;
 }
 
-.product-info .button-delete {
+.wrapper-product .product-info .button-delete {
     text-align: end;
     color: #666666;
     border-style: none;
@@ -33,12 +40,12 @@
     opacity: 0.2;
 }
 
-.product-info .button-delete:hover {
+.wrapper-product .product-info .button-delete:hover {
     opacity: 1;
     transition: ease-in-out 0.3s;
 }
 
-.product-info .btn-edit {
+.wrapper-product .product-info .btn-edit {
     text-align: end;
     text-decoration: none;
     color: #666666;
@@ -48,7 +55,7 @@
     opacity: 0.2;
 }
 
-.product-info .btn-edit:hover {
+.wrapper-product .product-info .btn-edit:hover {
     opacity: 1;
     transition: ease-in-out 0.3s;
 }
